@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converter</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src='jquery-3.1.1.js'></script>
+	<script type="text/javascript" src='bootstrap.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="project_4.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-2 "  id="contain">
+				<div class="row" id="header">
+					<div class="col-xs-12">
+						<h1>Converter &nbsp v1.0</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 dropdown">
+						<select  id="select1" onchange="select(this.value)">
+							<option value="Time">Time</option>
+							<option value="Weight">Weight</option>
+							<option value="Length">Length</option>
+							<option value="Temperature">Temperature</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row" id="body">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-8"  id="displayDropdown">
+								<div contenteditable="" class="col-xs-12 display" id="display1"></div>
+								
+								<div class="col-xs-12 drops" data-toggle="dropdown">
+									<select class="subSelect" value="select2">
+										<option>Seconds</option>
+										<option>Minutes</option>
+										<option>Hours</option>
+										<option>Days</option>
+									</select>
+								</div>
+
+								<div contenteditable="" class="col-xs-12 display" id="display2" value='0'></div>
+
+								<div>
+									<div class="col-xs-12 drops" data-toggle="dropdown">
+										<select class="subSelect" value="select3">
+											<option>Minutes</option>
+											<option>Seconds</option>
+											<option>Hours</option>
+											<option>Days</option>
+										</select>
+									</div>
+								</div>
+								
+							</div>
+						
+							<div class="col-xs-4"  id="keypad">
+								<div class="row" id="r1">
+									<div class="col-xs-12">
+										<div class="col-xs-4 butn" onclick="c('')" value=""><button>C</button></div>
+										<div class="col-xs-8 butn" onclick="c('')" value=""><button>CE</button></div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="col-xs-4 butn"><button  onclick="display('7')">7</button></div>
+										<div class="col-xs-4 butn" onclick="display('8')"><button>8</button></div>
+										<div class="col-xs-4 butn" onclick="display('9')"><button>9</button></div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="col-xs-4 butn" onclick="display('4')" value="4"><button>4</button></div>
+										<div class="col-xs-4 butn" onclick="display('5')" value="5"><button>5</button></div>
+										<div class="col-xs-4 butn" onclick="display('6')" value="6"><button>6</button></div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="col-xs-4 butn" onclick="display('1')" value="1"><button>1</button></div>
+										<div class="col-xs-4 butn" onclick="display('2')" value="2"><button>2</button></div>
+										<div class="col-xs-4 butn" onclick="display('3')" value="3"><button>3</button></div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="col-xs-8 butn" onclick="display('0')" value="0"><button>0</button></div>
+										<div class="col-xs-4 butn" onclick="display('.')" value="."><button>.</button></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="row" id="footer">
+					<div class="col-xs-12">
+						<div class="col-xs-12">About equal to</div>
+						<div class="col-xs-12">
+							<div class="col-xs-4">a</div>
+							<div class="col-xs-4">s</div>
+							<div class="col-xs-4">d</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src='project_4.js'></script>
+</body>
+</html>
