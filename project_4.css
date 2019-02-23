@@ -45,8 +45,23 @@ body{
 }
 
 .myBtn {
-    height: 30px;
+    height: 40px;
     background-color: transparent;
+    border-radius:0 20px 0 20px;
+}
+
+.dropdown-menu > li > a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #fc761d;
+}
+
+.drop {
+    background-color: #1d1d1d;
+
 }
 
 select {
@@ -99,7 +114,7 @@ button:hover{
 }
 
 button:active{
-	background-color:  #e65e02;
+	background-color:  #fc761d;
 	color: #1d1d1d;
 }
 
@@ -119,11 +134,11 @@ option {
 #select1{
 	font-size: 2.5rem;
 	/*border:1px solid white;*/
-	width: 13%;
+	width: 20%;
     letter-spacing: 1px;
 }
 
-#select1:active {
+#select1:focus {
     background-color: #e65e02;
     color: #1d1d1d;
 }
