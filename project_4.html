@@ -18,21 +18,21 @@
 			<div class="col-xs-10 col-xs-offset-2 "  id="contain">
 				<div class="row" id="header">
 					<div class="col-xs-12">
-						<h1>Converter &nbsp v1.0</h1>
+						<h2>Converter &nbsp <small>v1.0</small></h2>
 					</div>
 				</div>
 
-                <div class="row rHeight">
+                <div class="row">
                     <div class="dropdown col-xs-12 ">
-                        <button class="btn myBtn dropdown-toggle dropdown1"  id="select1" type="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn dropdown-toggle dropdown1" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="Select Unit">
                             Select Unit
                             <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu drop" aria-labelledby="about-us"  id="select1" onchange="u(this.value)">
-                            <li class="dropOption" value="Time"><a href="#">Time</a></li>
-                            <li class="dropOption" value="Weight"><a href="#">Weight</a></li>
-                            <li class="dropOption" value="Length"><a href="#">Length</a></li>
-                            <li class="dropOption" value="Temperature"><a href="#">Temperature</a></li>
+                        <ul class="dropdown-menu drop" aria-labelledby="dropdown1"  id="select1" onchange="u(this.value)">
+                            <li class="dropOption" onclick="changeSelect1('Time')" value="Time"><a href="#">Time</a></li>
+                            <li class="dropOption" onclick="changeSelect1('Weight')" value="Weight"><a href="#">Weight</a></li>
+                            <li class="dropOption" onclick="changeSelect1('Length')" value="Length"><a href="#">Length</a></li>
+                            <li class="dropOption" onclick="changeSelect1('Temperature')" value="Temperature"><a href="#">Temperature</a></li>
                         </ul>
                     </div>
                     <!--<div class="col-xs-12 dropdown1">
@@ -48,32 +48,55 @@
 				<div class="row" id="body">
 					<div class="col-xs-12">
 						<div class="row">
-							<div class="col-xs-8"  id="displayDropdown">
-								<div contenteditable="" class="col-xs-12 display" id="display1" ></div>
-								
-								<div class="col-xs-12 dropdown2" data-toggle="dropdown">
-									<select class="subSelect" value="select2">
-										<option>Seconds</option>
-										<option>Minutes</option>
-										<option>Hours</option>
-										<option>Days</option>
-									</select>
-								</div>
+                            <div class="col-xs-8" id="displayDropdown">
+                                <div contenteditable="" class="col-xs-12 display" id="display1"></div>
 
-								<div contenteditable="" class="col-xs-12 display" id="display2" value='0'></div>
+                                <!--<div class="col-xs-12 dropdown2" data-toggle="dropdown">
+        <select class="subSelect" value="select2">
+            <option>Seconds</option>
+            <option>Minutes</option>
+            <option>Hours</option>
+            <option>Days</option>
+        </select>
+    </div>-->
 
-								<div>
-									<div class="col-xs-12 dropdown2" data-toggle="dropdown">
-										<select class="subSelect" value="select3">
-											<option>Minutes</option>
-											<option>Seconds</option>
-											<option>Hours</option>
-											<option>Days</option>
-										</select>
-									</div>
-								</div>
-								
-							</div>
+                                <div class="dropdown col-xs-12">
+                                    <button class="btn dropdown-toggle dropdown2" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
+                                        Select
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu drop" aria-labelledby="dropdown2" id="select2">
+                                        <li class="dropOption" onclick="changeSelect2('Seconds')" value="Seconds"><a href="#">Seconds</a></li>
+                                        <li class="dropOption" onclick="changeSelect2('Minutes')" value="Minutes"><a href="#">Minutes</a></li>
+                                        <li class="dropOption" onclick="changeSelect2('Hours')" value="Hours"><a href="#">Hours</a></li>
+                                        <li class="dropOption" onclick="changeSelect2('Days')" value="Days"><a href="#">Days</a></li>
+                                    </ul>
+                                </div>
+
+                                <div contenteditable="" class="col-xs-12 display" id="display2" value='0'></div>
+
+                                <div class="dropdown col-xs-12">
+                                    <button class="btn dropdown-toggle dropdown2 dropdown3" type="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
+                                        Select
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu drop drop3" aria-labelledby="dropdown2" id="select3">
+                                        <li class="dropOption" onclick="changeSelect3('Seconds')" value="Seconds"><a href="#">Seconds</a></li>
+                                        <li class="dropOption" onclick="changeSelect3('Minutes')" value="Minutes"><a href="#">Minutes</a></li>
+                                        <li class="dropOption" onclick="changeSelect3('Hours')" value="Hours"><a href="#">Hours</a></li>
+                                        <li class="dropOption" onclick="changeSelect3('Days')" value="Days"><a href="#">Days</a></li>
+                                    </ul>
+                                    <!--<div class="col-xs-12 dropdown2" data-toggle="dropdown">
+        <select class="subSelect" value="select3">
+            <option>Minutes</option>
+            <option>Seconds</option>
+            <option>Hours</option>
+            <option>Days</option>
+        </select>
+    </div>-->
+                                </div>
+
+                            </div>
 						
 							<div class="col-xs-4"  id="keypad">
 								<div class="row" id="r1">

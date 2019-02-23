@@ -5,13 +5,9 @@ body{
 }
 
 #contain{
-	padding: 2%;
+	padding: 1%;
 	margin-top: 1%;
 	width: 70%;
-}
-
-#header{
-
 }
 
 #body{
@@ -31,15 +27,16 @@ body{
 	padding-left: 0;
 }
 
-/*.rHeight{
-    height:80px;
-}*/
-
-.dropdown1{
-	width: 15%;
-	margin-top: 2%;
+.dropdown1 {
+    margin-top: 2%;
     /*margin-left: 2%;*/
-    padding:0;
+    padding: 0;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 0 20px 0 20px;
+    font-size: 2.1rem;
+    width: 18%;
+    letter-spacing: 1px;
     /*margin:0;
     height: 4px;*/
 }
@@ -61,13 +58,31 @@ body{
 
 .drop {
     background-color: #1d1d1d;
+}
 
+.dropdown1:focus {
+    background-color: #e65e02;
+    color: #1d1d1d;
 }
 
 select {
     background: #1d1d1d !important;
     border: 0;
     color: white !important;
+}
+
+.dropdown2{
+    width: 18%;
+    /*margin-left: 2%;*/
+    padding: 0;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 0 20px 0 20px;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-top: 15px;
+    /*margin:0;
+    height: 4px;*/
 }
 
 .display{
@@ -87,8 +102,8 @@ select {
     /*border-radius: 20px;*/
 }
 
-    button {
-        width: 100%;
+button {
+        width: 99%;
         height: 70px;
         border: 0;
         border-radius: 0;
@@ -96,7 +111,7 @@ select {
         text-align: center;
         font-size: 2.5em;
         color: #a8a8a8;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
     }
 
 .butn{
@@ -126,13 +141,13 @@ option {
     font-size: 1.5rem !important;
 }
 
-    option:hover {
+option:hover {
         background-color: #e65e02 !important;
         color: #1d1d1d;
     }
 
 #select1{
-	font-size: 2.5rem;
+	font-size: 2.1rem;
 	/*border:1px solid white;*/
 	width: 20%;
     letter-spacing: 1px;
@@ -143,7 +158,5 @@ option {
     color: #1d1d1d;
 }
 
-.dropdown2 {
-    font-size: 1.2em;
-    margin-top: 5px;
+#keypad{
 }

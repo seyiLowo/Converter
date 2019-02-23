@@ -11,7 +11,6 @@ var flag = true;
 		}else{
 			document.getElementById('display2').innerHTML += val;
 		}
-		
 	}
 
 	function c(val){
@@ -27,6 +26,19 @@ var flag = true;
 				document.getElementById("display2").innerHTML=val;
 		}
 }
+
+function changeSelect1(select1) {
+    document.getElementById('dropdown1').innerHTML = select1 + " <span class='caret'></span>";
+}
+
+function changeSelect2(select2) {
+    document.getElementById('dropdown2').innerHTML = select2 + " <span class='caret'></span>";
+}
+
+function changeSelect3(select3) {
+    document.getElementById('dropdown3').innerHTML = select3 + " <span class='caret'></span>";
+}
+
 
 function deleteChar() {
     document.getElementById('display1').onfocus = function () {
