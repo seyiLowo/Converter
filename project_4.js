@@ -62,8 +62,10 @@ function deleteChar() {
 	// }
 
 	function u(u)
-		{
-			
+    {
+            var options = document.getElementById('select2').innerHTML;
+            var options =  document.getElementById('select3').innerHTML; 
+
 			if (u=='Weight')
 			{
 				var options = "<option value='Kg'>Kg</option><option value='g'>g</option><option value='Pounds'>Pounds</option>";
@@ -84,8 +86,7 @@ function deleteChar() {
 				var options = "<option value='C'>C</option><option value='F'>F</option><option value='K'>K</option>";
 			}
 			makeBlank();
-			document.getElementById('display1').innerHTML = options;
-			document.getElementById('display2').innerHTML = options;
-			document.getElementById('select2').innerHTML = options;
-			document.getElementById('select3').innerHTML = options;
+			//document.getElementById('display1').innerHTML = options;
+			//document.getElementById('display2').innerHTML = options;
+			
 		}

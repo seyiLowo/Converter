@@ -31,9 +31,22 @@ body{
 	padding-left: 0;
 }
 
+/*.rHeight{
+    height:80px;
+}*/
+
 .dropdown1{
-	width: 95%;
+	width: 15%;
 	margin-top: 2%;
+    /*margin-left: 2%;*/
+    padding:0;
+    /*margin:0;
+    height: 4px;*/
+}
+
+.myBtn {
+    height: 30px;
+    background-color: transparent;
 }
 
 select {

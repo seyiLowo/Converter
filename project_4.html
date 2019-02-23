@@ -22,16 +22,28 @@
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-xs-12 dropdown1">
-						<select  id="select1" onchange="u(this.value)">
-							<option value="Time">Time</option>
-							<option value="Weight">Weight</option>
-							<option value="Length">Length</option>
-							<option value="Temperature">Temp</option>
-						</select>
-					</div>
-				</div>
+                <div class="row rHeight">
+                    <div class="dropdown col-xs-12 ">
+                        <button class="btn myBtn dropdown-toggle dropdown1" type="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select Unit
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="about-us"  id="select1" onchange="u(this.value)">
+                            <li value="Time"><a href="#">Time</a></li>
+                            <li value="Weight"><a href="#">Weight</a></li>
+                            <li value="Length"><a href="#">Length</a></li>
+                            <li value="Temperature"><a href="#">Temperature</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="col-xs-12 dropdown1">
+        <select  id="select1" onchange="u(this.value)">
+            <option value="Time">Time</option>
+            <option value="Weight">Weight</option>
+            <option value="Length">Length</option>
+            <option value="Temperature">Temp</option>
+        </select>
+    </div>-->
+                </div>
 
 				<div class="row" id="body">
 					<div class="col-xs-12">
