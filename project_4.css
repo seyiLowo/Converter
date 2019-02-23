@@ -28,13 +28,18 @@ body{
 }
 
 #keypad{
-	
 	padding-left: 0;
 }
 
-.drpdown{
+.dropdown1{
 	width: 95%;
 	margin-top: 2%;
+}
+
+select {
+    background: #1d1d1d !important;
+    border: 0;
+    color: white !important;
 }
 
 .display{
@@ -46,21 +51,25 @@ body{
 	font-size: 4em;
 	color:#ffffff;
 	margin-top: 10px;
+    /*overflow-y:auto;*/
 }
 
-button{
-	width: 100%;
-	height: 70px;
-	border:0 ;
-	border-radius: 0 ;
-	background-color: #3f3f3f ;
-	text-align: center ;
-	font-size: 2.5em ;
-	color: #a8a8a8 ;
-	margin-bottom: 5px;
-	
-	
+.display:focus {
+    outline: 1px solid #fc6907;
+    /*border-radius: 20px;*/
 }
+
+    button {
+        width: 100%;
+        height: 70px;
+        border: 0;
+        border-radius: 0;
+        background-color: #3f3f3f;
+        text-align: center;
+        font-size: 2.5em;
+        color: #a8a8a8;
+        margin-bottom: 5px;
+    }
 
 .butn{
 	padding-right:0;
@@ -71,7 +80,7 @@ button{
 	font-size: 0.8em;
 }
 
-option, button:hover{
+button:hover{
 	background-color: #fc761d;
 	color: #1d1d1d;
 }
@@ -81,30 +90,32 @@ button:active{
 	color: #1d1d1d;
 }
 
-select{
-	background:#1d1d1d !important;
-	border: 0;
+option {
+    background-color: #1d1d1d !important;
+    color: white !important;
+    /*font-weight: lighter !important;*/
+    border: 1px solid white;
+    font-size: 1.5rem !important;
 }
 
-select{
-	color: white!important;
-}
-	
-
-option{
-	background-color: black !important;
-	color: white !important;
-	font-weight: bold !important;
-	border: 1px solid white;
-	font-size: 1em !important;
-}
+    option:hover {
+        background-color: #e65e02 !important;
+        color: #1d1d1d;
+    }
 
 #select1{
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	/*border:1px solid white;*/
-	width: 15%;
+	width: 13%;
+    letter-spacing: 1px;
 }
 
-.drops{
-	font-size: 1.4em;
+#select1:active {
+    background-color: #e65e02;
+    color: #1d1d1d;
+}
+
+.dropdown2 {
+    font-size: 1.2em;
+    margin-top: 5px;
 }
