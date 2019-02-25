@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="project_4.css">
-    <script src="project_4.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 
 
 </head>
@@ -52,51 +52,26 @@
 					<div class="col-xs-12">
 						<div class="row">
                             <div class="col-xs-8" id="displayDropdown">
-                                <div contenteditable="" class="col-xs-12 display" id="display1"></div>
-
-                                <!--<div class="col-xs-12 dropdown2" data-toggle="dropdown">
-        <select class="subSelect" value="select2">
-            <option>Seconds</option>
-            <option>Minutes</option>
-            <option>Hours</option>
-            <option>Days</option>
-        </select>
-    </div>-->
+                                <div contenteditable="" class="col-xs-12 display" id="display1" onkeyup="converter1()"></div>
 
                                 <div class="dropdown col-xs-12">
                                     <button class="btn dropdown-toggle dropdown2" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
                                         <span id="selectText2">Select</span>
                                         <span class="caret"></span>
                                     </button>
-                                    <ul class="dropdown-menu drop" aria-labelledby="dropdown2" id="select2">
-                                        <!--<li class="dropOption d2"><a href="#" data-value="Second">Second</a></li>
-                                        <li class="dropOption d2"><a href="#" data-value="Minute">Minute</a></li>
-                                        <li class="dropOption d2"><a href="#" data-value="Hour">Hour</a></li>
-                                        <li class="dropOption d2"><a href="#" data-value="Day">Day</a></li>-->
-                                    </ul>
+
+                                    <ul class="dropdown-menu drop" aria-labelledby="dropdown2" id="select2"></ul>
                                 </div>
 
-                                <div contenteditable="" class="col-xs-12 display" id="display2" value='0'></div>
+                                <div contenteditable="" class="col-xs-12 display" id="display2" value='0' onkeyup="converter2()"></div>
 
                                 <div class="dropdown col-xs-12">
                                     <button class="btn dropdown-toggle dropdown2 dropdown3" type="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
                                         <span id="selectText3">Select</span>
                                         <span class="caret"></span>
                                     </button>
-                                    <ul class="dropdown-menu drop drop3" aria-labelledby="dropdown2" id="select3">
-                                        <!--<li class="dropOption"><a href="#" data-value="Seconds">Second</a></li>
-                                        <li class="dropOption"><a href="#" data-value="Minutes">Minutes</a></li>
-                                        <li class="dropOption"><a href="#" data-value="Hours">Hours</a></li>
-                                        <li class="dropOption"><a href="#" data-value="Days">Days</a></li>-->
-                                    </ul>
-                                    <!--<div class="col-xs-12 dropdown2" data-toggle="dropdown">
-        <select class="subSelect" value="select3">
-            <option>Minutes</option>
-            <option>Seconds</option>
-            <option>Hours</option>
-            <option>Days</option>
-        </select>
-    </div>-->
+
+                                    <ul class="dropdown-menu drop drop3" aria-labelledby="dropdown2" id="select3"></ul>
                                 </div>
 
                             </div>
@@ -157,6 +132,6 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src='project_4.js'></script>
+	<!--<script type="text/javascript" src='script.js'></script>-->
 </body>
 </html>
